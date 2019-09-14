@@ -21,6 +21,14 @@
           <li><a href="#">Сравнить</a></li>
           <li><a href="#">Корзина</a></li>
         </ul>
+        <ul class="catalog-menu">
+          <li><a href="#">Виртуальная реальность</a></li>
+          <li><a href="#">Моноподы для селфи</a></li>
+          <li><a href="#">Экшн-камеры</a></li>
+          <li><a href="#">Фитнес-браслеты</a></li>
+          <li><a href="#">Умные часы</a></li>
+          <li><a href="#">Квадрокоптеры</a></li>
+        </ul>
       </nav>
     </header>
     <main>
@@ -32,21 +40,40 @@
         <li><a>Моноподы для селфи</a></li>
       </ul>
       <section>
-        <!--Фильтр, форма -->
-        <h3>Цвет</h3>
+        <h2>фильтр:</h2>
+        <form class="" action="index.html" method="post">
+          <fieldset>
+            <h3>Стоимость</h3>
+            <input type="range" name="" value="">
+          </fieldset>
+          <fieldset>
+            <h3>Цвет</h3>
+            <input type="checkbox" name="black" id="black" checked>
+            <label for="black">Черный</label>
+            <input type="checkbox" name="white" id="white">
+            <label for="white">Белый</label>
+            <input type="checkbox" name="blue" id="blue" checked>
+            <label for="blue">Синий</label>
+            <input type="checkbox" name="red" id="red" checked>
+            <label for="red">Красный</label>
+            <input type="checkbox" name="pink" id="pink">
+            <label for="pink">Розовый</label>
+          </fieldset>
+          <fieldset>
+            <h3>Bluetooth</h3>
+            <input type="radio" name="bluetooth" value="yes" id="bluetooth-yes" checked>
+            <label for="bluetooth-yes">Есть</label>
+            <input type="radio" name="bluetooth" value="no" id="bluetooth-no">
+            <label for="bluetooth-no">Нет</label>
+          </fieldset>
+          <button type="submit" name="button">показать</button>
+        </form>
+        <h2>сортировка:</h2>
         <ul>
-          <li>Черный</li>
-          <li>Белый</li>
-          <li>Синий</li>
-          <li>Красный</li>
-          <li>Розовый</li>
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По популярности</a></li>
         </ul>
-        <h3>Bluetooth</h3>
-        <ul>
-          <li>Есть</li>
-          <li>Нет</li>
-        </ul>
-        <button type="submit" name="button">показать</button>
       </section>
       <section>
         <h2 class="visually hidden">Карточки товаров</h2>
@@ -78,6 +105,15 @@
             <span>4900 руб.</span>
           </div>
         </article>
+        <div class="pagination">
+          <ul>
+            <li><button type="button" name="button">назад</button></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><button type="button" name="button">вперед</button></li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer>
