@@ -15,7 +15,10 @@
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="user-nav">
-          <li><span>Поиск по сайту</span></li>
+          <li>
+            <label for="search"></label>
+            <input type="search" placeholder="Поиск по сайту" id="search">
+          </li>
           <li><a href="#">Войти</a></li>
           <li><a href="#">Сравнить</a></li>
           <li><a href="#">Корзина</a></li>
@@ -34,7 +37,7 @@
       <h1 class="visually hidden">Магазин элетронных гаджетов Device</h1>
       <section class="slider">
         <div class="slider-1">
-          <img src="img/slider-1.png" width="384" height="486" alt="Карточка слайдера">
+          <img src="img/slider-1.png" width="384" height="486" alt="Изображение товара: Селфи палка">
           <p>Делай селфи, как Бен Стиллер!</p>
           <p>Самая длинная палка для селфи доступна в нашем магазине.
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -53,7 +56,7 @@
           </table>
         </div>
         <div class="slider-2">
-          <img src="img/slider-2.png" width="345" height="485" alt="Карточка слайдера">
+          <img src="img/slider-2.png" width="345" height="485" alt="Изображение товара: Фитнес-браслет">
           <p>Худеем правильно!</p>
           <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
           <a href="#">подробнее</a>
@@ -67,7 +70,7 @@
           </table>
         </div>
         <div class="slider-3">
-          <img src="img/slider-3.png" width="526" height="334" alt="Карточка слайдера">
+          <img src="img/slider-3.png" width="526" height="334" alt="Изображение товара: Квадрокоптер">
           <p>Порхает как бабочка, жалит как пчела!</p>
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
           <a href="#">подробнее</a>
@@ -185,7 +188,7 @@
       <section>
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <img src="img/map.jpg" width="560" height="222" alt="Карта проезда">
+        <img src="img/map.jpg" width="560" height="222" alt="Адрес офиса: г. Москва, ул. Строителей, д. 15">
         <button type="button" name="button">напишите нам</button>
       </section>
     </main>
@@ -206,11 +209,27 @@
       </ul>
       <p>Тел.: +7(495)495-95-95</p>
       <ul class="social">
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграм</a></li>
-        <li><a href="#">Твиттер</a></li>
+        <li><a href="#">Страница магазина в Фейсбук</a></li>
+        <li><a href="#">Страница магазина в Инстаграм</a></li>
+        <li><a href="#">Страница магазина в Твиттер</a></li>
       </ul>
       <a href="https://htmlacademy.ru/intensive/htmlcss">лого академии</a>
     </footer>
+    <div class="map-popup">
+      <a href="#">интерактивная карта</a>
+      <button type="button">закрыть</button>
+    </div>
+    <div class="write-us-popup">
+      <form class="" action="https://echo.htmlacademy.ru" method="post">
+        <label for="name">Ваше имя:</label>
+        <input type="text" name="Name" value="" placeholder="Имя Фамилия" id="name">
+        <label for="email">Ваш e-mail:</label>
+        <input type="text" name="Email" value="" placeholder="email@example.com" id="email">
+        <label for="text">Текст письма:</label>
+        <textarea name="Text" rows="8" cols="80" placeholder="В свободной форме" id="text"></textarea>
+        <button type="submit">отправить</button>
+      </form>
+      <button type="button">закрыть</button>
+    </div>
   </body>
 </html>
