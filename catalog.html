@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="header-nav">
         <a href="index.html"><img src="img/logo-device.svg" width="163" height="35" alt="Логотип Device"></a>
         <ul class="main-nav">
           <li><a href="catalog.html">Каталог товаров</a></li>
@@ -26,7 +29,7 @@
           <li><a href="#">Сравнить</a></li>
           <li><a href="#">Корзина</a></li>
         </ul>
-        <ul class="catalog-menu">
+        <ul class="catalog-nav">
           <li><a href="#">Виртуальная реальность</a></li>
           <li><a href="#">Моноподы для селфи</a></li>
           <li><a href="#">Экшн-камеры</a></li>
@@ -36,19 +39,19 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <h1 class="visually hidden">Каталог товаров</h1>
+    <main class="catalog-page">
+      <h1 class="visually-hidden">Каталог товаров</h1>
       <h2>Моноподы для селфи</h2>
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог товаров</a></li>
         <li><a>Моноподы для селфи</a></li>
       </ul>
-      <section>
+      <section class="filter">
         <h2>фильтр:</h2>
-        <form class="" action="https://echo.htmlacademy.ru" method="post">
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
           <h3>Стоимость</h3>
-          <input type="range" name="" value=""> <!-- это не импут, в дальнейшем будем верстать элемент вручную -->
+          <input type="range" name="" value="">
           <fieldset>
             <h3>Цвет</h3>
             <input type="checkbox" name="black" aria-label="черный цвет" id="black" checked>
@@ -69,17 +72,19 @@
             <input type="radio" name="bluetooth" value="no" aria-label="bluetooth отсутствует" id="bluetooth-no">
             <label for="bluetooth-no">Нет</label>
           </fieldset>
-          <button type="submit">показать</button>
+          <button class="link" type="submit">показать</button>
         </form>
         <h2>сортировка:</h2>
-        <ul>
+        <ul class="sort">
           <li><a href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По популярности</a></li>
+          <li><a href="#">По возрастанию</a></li>
+          <li><a href="#">По убыванию</a></li>
         </ul>
       </section>
       <section>
-        <h2 class="visually hidden">Карточки товаров</h2>
+        <h2 class="visually-hidden">Карточки товаров</h2>
         <article class="catalog-item">
           <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
           <div class="item-name">
@@ -119,9 +124,9 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="page-footer">
       <div class="footer-logo">
-        <a href="index.html"><img src="img/logo-device.svg" width="163" height="35" alt="Логотип Device"></a>
+        <a href="index.html"><img src="img/logo-device-yellow.svg" width="163" height="35" alt="Логотип Device"></a>
       </div>
       <ul class="user-nav">
         <li><a href="#">Валентин Петухов</a></li>
