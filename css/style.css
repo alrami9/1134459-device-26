@@ -1,25 +1,17 @@
 @font-face {
   font-family: "Gilroy Light";
   src: local("Gilroy Light"), local("Gilroy-Light"),
-       url("gilroylight.woff2") format("woff2"),
-       url("gilroylight.woff") format("woff");
+       url("../fonts/gilroylight.woff2") format("woff2"),
+       url("../fonts/gilroylight.woff") format("woff");
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gilroy ExtraBold";
   src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"),
-       url("gilroyextrabold.woff2") format("woff2"),
-       url("gilroyextrabold.woff") format("woff");
+       url("../fonts/gilroyextrabold.woff2") format("woff2"),
+       url("../fonts/gilroyextrabold.woff") format("woff");
   font-style: normal;
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
 }
 
 body {
@@ -32,8 +24,29 @@ body {
   color: #000000;
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.clear-button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .header-nav ul {
@@ -47,11 +60,62 @@ a {
   color: #000000;
 }
 
+.main-logo:hover,
+.html-logo:hover {
+  opacity: 0.6;
+}
+
+.main-logo:active,
+.html-logo:active {
+  opacity: 0.3;
+}
+
+.header-nav a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header-nav a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .main-nav a {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy ExtraBold";
   text-transform: uppercase;
+}
+
+.user-nav .btn-search {
+  display: none;
+  padding: 0;
+  border: none;
+  font-weight: 300;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input[type="search"]::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+input[type="search"]:hover::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+input[type="search"]:focus + .btn-search {
+  display: inline-block;
+  border: 2px solid #000000;
+}
+
+.btn-search:hover {
+  display: inline-block;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.btn-search:active {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .catalog-nav a {
@@ -70,6 +134,14 @@ a {
   font-family: "Gilroy ExtraBold";
   color: #000000;
   text-transform: uppercase;
+}
+
+.link:hover {
+  background-color: #f0c52e;
+}
+
+.link:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 table .tech-spec:first-child {
@@ -99,11 +171,19 @@ table .tech-spec:last-child {
   background-color: #f8ebaa;
 }
 
+.menu-icon:hover {
+  background-color: #f0c52e;
+}
+
 .catalog-menu h3 {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy ExtraBold";
   color: #000000;
+}
+
+.catalog-menu h3:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .conditions h3,
@@ -112,6 +192,15 @@ table .tech-spec:last-child {
   font-size: 47px;
   line-height: 48px;
   font-family: "Gilroy ExtraBold";
+}
+
+.conditions {
+  background-color: #e5e5e5;
+}
+
+.conditions .link:active {
+  background-color: #000000;
+  color: #f7e184;
 }
 
 .about-us li {
@@ -126,7 +215,7 @@ table .tech-spec:last-child {
 }
 
 .page-footer a {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 
@@ -149,7 +238,23 @@ table .tech-spec:last-child {
 .breadcrumbs a {
   font-size: 14px;
   line-height: 24px;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.filter {
+  background-color: #eeeeee;
+}
+
+.filter h2:first-of-type {
+  background-color: #dcdcdc;
 }
 
 .filter h2 {
@@ -170,11 +275,37 @@ table .tech-spec:last-child {
   line-height: 39px;
 }
 
+.filter-form input[disabled] + label {
+  color: rgba(0, 0, 0, 0.25);
+}
+
 .sort a {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sort a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sort a:active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.item-cart a:last-child {
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.item-cart a:last-child:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.item-cart a:last-child:active {
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .item-name a {
@@ -190,10 +321,57 @@ table .tech-spec:last-child {
   font-family: "Gilroy Light";
 }
 
+.pagination {
+  background-color: #ebebeb;
+}
 .pagination a {
   font-size: 16px;
   line-height: 24px;
   font-family: "Gilroy ExtraBold";
   color: #000000;
   text-transform: uppercase;
+}
+
+.pagination-list a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-list a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination-list a:active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.pagination-list .active-page {
+  color: rgba(0, 0, 0, 1);
+}
+
+.pagination > a:hover {
+  background-color: #d8d8d8;
+}
+
+.pagination > a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.page-footer a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.page-footer a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-main-nav a {
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-main-nav a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-main-nav a:active {
+  color: rgba(255, 255, 255, 0.3);
 }

@@ -10,7 +10,7 @@
   <body>
     <header>
       <nav class="header-nav">
-        <a href="index.html"><img src="img/logo-device.svg" width="163" height="35" alt="Логотип Device"></a>
+        <a class="main-logo" href="index.html"><img src="img/logo-device.svg" width="163" height="35" alt="Логотип Device"></a>
         <ul class="main-nav">
           <li><a href="catalog.html">Каталог товаров</a></li>
           <li><a href="#">Доставка</a></li>
@@ -20,8 +20,8 @@
         <ul class="user-nav">
           <li>
             <form class="" action="https://echo.htmlacademy.ru" method="post">
-              <input type="search" placeholder="Поиск по сайту" id="search">
-              <button type="submit">Найти</button>
+              <input type="search" placeholder="Поиск по сайту">
+              <button class="btn-search" type="submit">Найти</button>
             </form>
           </li>
           <li><a href="#">Валентин Петухов</a></li>
@@ -72,7 +72,7 @@
             <input type="radio" name="bluetooth" value="no" aria-label="bluetooth отсутствует" id="bluetooth-no">
             <label for="bluetooth-no">Нет</label>
           </fieldset>
-          <button class="link" type="submit">показать</button>
+          <button class="link clear-button" type="submit">показать</button>
         </form>
         <h2>сортировка:</h2>
         <ul class="sort">
@@ -87,6 +87,10 @@
         <h2 class="visually-hidden">Карточки товаров</h2>
         <article class="catalog-item">
           <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+          <div class="item-cart">
+            <a href="#" class="link">в корзину</a>
+            <a href="#">Добавить к сравнению</a>
+          </div>
           <div class="item-name">
             <a href="#">Любительская селфи-палка</a>
             <span>500 руб.</span>
@@ -94,6 +98,10 @@
         </article>
         <article class="catalog-item">
           <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+          <div class="item-cart">
+            <a href="#" class="link">в корзину</a>
+            <a href="#">Добавить к сравнению</a>
+          </div>
           <div class="item-name">
             <a href="#">Профессиональная селфи-палка</a>
             <span>1500 руб.</span>
@@ -101,6 +109,10 @@
         </article>
         <article class="catalog-item">
           <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+          <div class="item-cart">
+            <a href="#" class="link">в корзину</a>
+            <a href="#">Добавить к сравнению</a>
+          </div>
           <div class="item-name">
             <a href="#">Непотопляемая селфи-палка</a>
             <span>2500 руб.</span>
@@ -108,26 +120,28 @@
         </article>
         <article class="catalog-item">
           <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка - Следуй за мной">
+          <div class="item-cart">
+            <a href="#" class="link">в корзину</a>
+            <a href="#">Добавить к сравнению</a>
+          </div>
           <div class="item-name">
             <a href="#">Селфи-палка "Следуй за мной"</a>
             <span>4900 руб.</span>
           </div>
         </article>
         <div class="pagination">
-          <ul>
-            <li><a href="#">назад</a></li>
-            <li><a href="#">1</a></li>
+          <a href="#">назад</a>
+          <ul class="pagination-list">
+            <li><a  class="active-page" href="#">1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
-            <li><a href="#">вперед</a></li>
           </ul>
+          <a href="#">вперед</a>
         </div>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="footer-logo">
-        <a href="index.html"><img src="img/logo-device-yellow.svg" width="163" height="35" alt="Логотип Device"></a>
-      </div>
+      <a class="main-logo" href="index.html"><img src="img/logo-device-yellow.svg" width="163" height="35" alt="Логотип Device"></a>
       <ul class="user-nav">
         <li><a href="#">Валентин Петухов</a></li>
         <li><a href="#">Выйти</a></li>
@@ -135,7 +149,7 @@
         <li><a href="#">Корзина</a></li>
       </ul>
       <p>г. Москва, ул Строителей, 15</p>
-      <ul class="main-nav">
+      <ul class="main-nav footer-main-nav">
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
         <li><a href="#">Контакты</a></li>
@@ -146,7 +160,7 @@
         <li><a href="#">Страница магазина в Инстаграм</a></li>
         <li><a href="#">Страница магазина в Твиттер</a></li>
       </ul>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">страница курса Академии HTML</a>
+      <a class="html-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" width="27" height="35" alt="Логотип HtmlAcademy">страница курса Академии HTML</a>
     </footer>
   </body>
 </html>
