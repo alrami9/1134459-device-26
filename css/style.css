@@ -1,27 +1,28 @@
 @font-face {
-  font-family: "Gilroy Light";
-  src: local("Gilroy Light"), local("Gilroy-Light"),
+  font-family: "Gilroy";
+  src: local("Gilroy"), local("Gilroy-Light"),
        url("../fonts/gilroylight.woff2") format("woff2"),
        url("../fonts/gilroylight.woff") format("woff");
   font-style: normal;
+  font-weight: 300;
 }
 
 @font-face {
-  font-family: "Gilroy ExtraBold";
-  src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"),
+  font-family: "Gilroy";
+  src: local("Gilroy"), local("Gilroy-ExtraBold"),
        url("../fonts/gilroyextrabold.woff2") format("woff2"),
        url("../fonts/gilroyextrabold.woff") format("woff");
   font-style: normal;
+  font-weight: 800;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #000000;
+  background-color: #ffffff;
 }
 
 img {
@@ -40,19 +41,50 @@ a {
   margin: -1px;
 }
 
-.clear-button {
-  padding: 0;
-  border: none;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
+.clear-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.link {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.link:hover {
+  background-color: #f0c52e;
+}
+
+.link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.link-2 {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  color: #000000;
+  text-transform: uppercase;
   cursor: pointer;
 }
 
+.link-2:hover {
+  background-color: #f0c52e;
+}
+
+.link-2:active {
+  background-color: #000000;
+  color: #f7e184;
+}
+
 .header-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   background-color: #f9ea7f;
 }
 
@@ -81,11 +113,12 @@ a {
 .main-nav a {
   font-size: 18px;
   line-height: 24px;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
   text-transform: uppercase;
 }
 
-.user-nav .btn-search {
+.btn-search {
   display: none;
   padding: 0;
   border: none;
@@ -94,15 +127,15 @@ a {
   cursor: pointer;
 }
 
-input[type="search"]::placeholder {
+.search::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
-input[type="search"]:hover::placeholder {
+.search:hover::placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
 
-input[type="search"]:focus + .btn-search {
+.search:focus + .btn-search {
   display: inline-block;
   border: 2px solid #000000;
 }
@@ -122,47 +155,23 @@ input[type="search"]:focus + .btn-search {
   line-height: 36px;
 }
 
-.slider p:first-of-type {
+.tagline:first-of-type {
   font-size: 47px;
   line-height: 56px;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
 }
 
-.link {
-  font-size: 18px;
-  line-height: 24px;
-  font-family: "Gilroy ExtraBold";
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.link:hover {
-  background-color: #f0c52e;
-}
-
-.link:active {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-table .tech-spec:first-child {
+.tech-spec td {
   font-size: 36px;
   line-height: 48px;
-  font-family: "Gilroy Light";
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 300;
 }
 
-table .tech-spec:last-child {
+.tech-spec th {
   font-size: 13px;
   line-height: 20px;
-}
-
-.catalog-menu,
-.conditions ul,
-.about-us ul,
-.partners ul,
-.page-footer ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .menu-icon {
@@ -178,7 +187,8 @@ table .tech-spec:last-child {
 .catalog-menu h3 {
   font-size: 18px;
   line-height: 24px;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
   color: #000000;
 }
 
@@ -191,22 +201,19 @@ table .tech-spec:last-child {
 .contacts h2 {
   font-size: 47px;
   line-height: 48px;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
 }
 
 .conditions {
   background-color: #e5e5e5;
 }
 
-.conditions .link:active {
-  background-color: #000000;
-  color: #f7e184;
-}
-
 .about-us li {
   font-size: 16px;
   line-height: 40px;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
 }
 
 .page-footer {
@@ -224,15 +231,8 @@ table .tech-spec:last-child {
 .catalog-page > h2 {
   font-size: 47px;
   line-height: 48px;
-  font-family: "Gilroy ExtraBold";
-}
-
-.breadcrumbs,
-.filter > ul,
-.pagination ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
 }
 
 .breadcrumbs a {
@@ -253,21 +253,20 @@ table .tech-spec:last-child {
   background-color: #eeeeee;
 }
 
-.filter h2:first-of-type {
-  background-color: #dcdcdc;
-}
-
 .filter h2 {
   font-size: 16px;
   line-height: 24px;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
   text-transform: uppercase;
+  background-color: #dcdcdc;
 }
 
 .filter h3 {
   font-size: 18px;
   line-height: 24px;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
 }
 
 .filter-form label {
@@ -277,6 +276,18 @@ table .tech-spec:last-child {
 
 .filter-form input[disabled] + label {
   color: rgba(0, 0, 0, 0.25);
+}
+
+.sort {
+  background-color: #eeeeee;
+}
+
+.sort h2 {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .sort a {
@@ -311,14 +322,16 @@ table .tech-spec:last-child {
 .item-name a {
   font-size: 18px;
   line-height: 24px;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
   color: #000000;
 }
 
 .item-name span {
   font-size: 16px;
   line-height: 24px;
-  font-family: "Gilroy Light";
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 300;
 }
 
 .pagination {
@@ -327,7 +340,8 @@ table .tech-spec:last-child {
 .pagination a {
   font-size: 16px;
   line-height: 24px;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
   color: #000000;
   text-transform: uppercase;
 }

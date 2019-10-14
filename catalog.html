@@ -11,16 +11,16 @@
     <header>
       <nav class="header-nav">
         <a class="main-logo" href="index.html"><img src="img/logo-device.svg" width="163" height="35" alt="Логотип Device"></a>
-        <ul class="main-nav">
+        <ul class="main-nav clear-list">
           <li><a href="catalog.html">Каталог товаров</a></li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <ul class="user-nav">
+        <ul class="user-nav clear-list">
           <li>
             <form class="" action="https://echo.htmlacademy.ru" method="post">
-              <input type="search" placeholder="Поиск по сайту">
+              <input class="search" type="search" placeholder="Поиск по сайту">
               <button class="btn-search" type="submit">Найти</button>
             </form>
           </li>
@@ -29,7 +29,7 @@
           <li><a href="#">Сравнить</a></li>
           <li><a href="#">Корзина</a></li>
         </ul>
-        <ul class="catalog-nav">
+        <ul class="catalog-nav clear-list">
           <li><a href="#">Виртуальная реальность</a></li>
           <li><a href="#">Моноподы для селфи</a></li>
           <li><a href="#">Экшн-камеры</a></li>
@@ -42,7 +42,7 @@
     <main class="catalog-page">
       <h1 class="visually-hidden">Каталог товаров</h1>
       <h2>Моноподы для селфи</h2>
-      <ul class="breadcrumbs">
+      <ul class="breadcrumbs clear-list">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог товаров</a></li>
         <li><a>Моноподы для селфи</a></li>
@@ -72,19 +72,21 @@
             <input type="radio" name="bluetooth" value="no" aria-label="bluetooth отсутствует" id="bluetooth-no">
             <label for="bluetooth-no">Нет</label>
           </fieldset>
-          <button class="link clear-button" type="submit">показать</button>
+          <button class="link" type="submit">показать</button>
         </form>
-        <h2>сортировка:</h2>
-        <ul class="sort">
-          <li><a href="#">По цене</a></li>
-          <li><a href="#">По типу</a></li>
-          <li><a href="#">По популярности</a></li>
-          <li><a href="#">По возрастанию</a></li>
-          <li><a href="#">По убыванию</a></li>
-        </ul>
       </section>
       <section>
         <h2 class="visually-hidden">Карточки товаров</h2>
+        <div class="sort">
+          <h2>сортировка:</h2>
+          <ul class="clear-list">
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По популярности</a></li>
+            <li><a href="#">По возрастанию</a></li>
+            <li><a href="#">По убыванию</a></li>
+          </ul>
+        </div>
         <article class="catalog-item">
           <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
           <div class="item-cart">
@@ -131,7 +133,7 @@
         </article>
         <div class="pagination">
           <a href="#">назад</a>
-          <ul class="pagination-list">
+          <ul class="pagination-list clear-list">
             <li><a  class="active-page" href="#">1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
@@ -142,20 +144,20 @@
     </main>
     <footer class="page-footer">
       <a class="main-logo" href="index.html"><img src="img/logo-device-yellow.svg" width="163" height="35" alt="Логотип Device"></a>
-      <ul class="user-nav">
+      <ul class="user-nav clear-list">
         <li><a href="#">Валентин Петухов</a></li>
         <li><a href="#">Выйти</a></li>
         <li><a href="#">Сравнить</a></li>
         <li><a href="#">Корзина</a></li>
       </ul>
       <p>г. Москва, ул Строителей, 15</p>
-      <ul class="main-nav footer-main-nav">
+      <ul class="main-nav footer-main-nav clear-list">
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
       <p>Тел.: +7(495)495-95-95</p>
-      <ul class="social">
+      <ul class="social clear-list">
         <li><a href="#">Страница магазина в Фейсбук</a></li>
         <li><a href="#">Страница магазина в Инстаграм</a></li>
         <li><a href="#">Страница магазина в Твиттер</a></li>
