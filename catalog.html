@@ -39,7 +39,7 @@
         </ul>
       </nav>
     </header>
-    <main class="catalog-page main-wrapper">
+    <main class="catalog-page">
       <h1 class="visually-hidden">Каталог товаров</h1>
       <h2 class="container">Моноподы для селфи</h2>
       <ul class="breadcrumbs clear-list container">
@@ -49,7 +49,9 @@
       </ul>
       <div class="catalog-columns">
         <section class="filter">
-          <h2>фильтр:</h2>
+          <div class="filter-tagline">
+            <h2>фильтр:</h2>
+          </div>
           <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
             <h3>Стоимость</h3>
             <input type="range" name="" value="">
@@ -76,10 +78,10 @@
             <button class="link" type="submit">показать</button>
           </form>
         </section>
-        <section>
+        <section class="items">
           <h2 class="visually-hidden">Карточки товаров</h2>
           <div class="sort-columns">
-            <div class="sort">
+            <div class="sort container-2">
               <h2>сортировка:</h2>
               <ul class="sort-list clear-list">
                 <li><a href="#">По цене</a></li>
@@ -90,7 +92,7 @@
               </ul>
             </div>
           </div>
-          <div class="item-columns">
+          <div class="item-columns container-2">
             <article class="catalog-item">
               <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
               <div class="item-cart">
@@ -136,7 +138,7 @@
               </div>
             </article>
           </div>
-          <div class="pagination-columns">
+          <div class="pagination-columns container-2">
             <div class="pagination">
               <a href="#">назад</a>
               <ul class="pagination-list clear-list">

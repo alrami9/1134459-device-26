@@ -25,6 +25,7 @@ html {
 }
 
 body {
+  min-width: 1160px;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -268,7 +269,7 @@ a {
 }
 
 .conditions {
-  background-color: #e5e5e5;
+  background-image: linear-gradient( #ffffff 0px, #ffffff 200px, #e5e5e5 200px, #e5e5e5 100%);
 }
 
 .conditions .main-wrapper {
@@ -361,7 +362,11 @@ a {
 
 .filter {
   background-color: #eeeeee;
-  width: 330px;
+  width: calc(50% - 250px);
+}
+
+.filter-tagline {
+  background-color: #dcdcdc;
 }
 
 .filter h2 {
@@ -370,7 +375,8 @@ a {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
-  background-color: #dcdcdc;
+  width: 328px;
+  margin-left: auto;
 }
 
 .filter h3 {
@@ -383,6 +389,8 @@ a {
 .filter-form {
   display: flex;
   flex-direction: column;
+  width: 328px;
+  margin-left: auto;
 }
 
 .filter-form label {
@@ -394,15 +402,18 @@ a {
   color: rgba(0, 0, 0, 0.25);
 }
 
+.items {
+  width: calc(50% + 250px);
+}
+
 .sort {
   display: flex;
-  width: 100%;
-  background-color: #eeeeee;
 }
 
 .sort-columns {
   display: flex;
   flex-direction: column;
+  background-color: #eeeeee;
 }
 
 .sort-list {
@@ -436,6 +447,10 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.container-2 {
+  width: 760px;
 }
 
 .catalog-item {
