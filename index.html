@@ -47,66 +47,78 @@
     <main>
       <h1 class="visually-hidden">Магазин элетронных гаджетов Device</h1>
       <div class="main-wrapper">
-        <section class="slider container">
-          <div class="slide">
-            <div class="slide-image">
-              <img src="img/slider-1.png" width="384" height="486" alt="Изображение товара: Селфи палка">
-            </div>
-            <div class="slide-description">
-              <p class="tagline">Делай селфи, как Бен Стиллер!</p>
-              <p>Самая длинная палка для селфи доступна в нашем магазине.
-                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-              <a href="#" class="link">подробнее</a>
-              <table class="tech-spec">
-                <tr>
-                  <td>8,5 м</td>
-                  <td>5 кг</td>
-                  <td> Карбон</td>
-                </tr>
-                <tr>
-                  <th>Длина палки</th>
-                  <th>Вес палки</th>
-                  <th>Материал</th>
-                </tr>
-              </table>
-            </div>
+        <section class="slider">
+          <input class="visually-hidden" type="radio" name="toggle" id="btn-1"checked>
+          <input class="visually-hidden" type="radio" name="toggle" id="btn-2">
+          <input class="visually-hidden" type="radio" name="toggle" id="btn-3">
+          <div class="slider-controls">
+            <label for="btn-1"></label><!--
+            --><label for="btn-2"></label><!--
+            --><label for="btn-3"></label>
           </div>
-          <div class="slide">
-            <div class="slide-image">
-              <img src="img/slider-2.png" width="345" height="485" alt="Изображение товара: Фитнес-браслет">
-            </div>
-            <div class="slide-description">
-              <p class="tagline">Худеем правильно!</p>
-              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-              <a href="#" class="link">подробнее</a>
-              <table class="tech-spec">
-                <tr>
-                  <td>48 часов</td>
-                </tr>
-                <tr>
-                  <th>Без подзарядки</th>
-                </tr>
-              </table>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="slide-image">
-              <img src="img/slider-3.png" width="526" height="334" alt="Изображение товара: Квадрокоптер">
-            </div>
-            <div class="slide-description">
-              <p class="tagline">Порхает как бабочка, жалит как пчела!</p>
-              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-              <a href="#" class="link">подробнее</a>
-              <table class="tech-spec">
-                <tr>
-                  <td>800 м</td>
-                  <td>50 м</td>
-                </tr>
-                <tr>
-                  <th>Дальность полета</th>
-                  <th>Радиус поражения</th>
-                </tr>
-              </table>
+          <div class="slider-slides">
+            <div class="slider-inner">
+              <div class="slide-1 slide">
+                <div class="slide-1 slide-image">
+                  <img src="img/slider-1.png" width="384" height="486" alt="Изображение товара: Селфи палка">
+                </div>
+                <div class="slide-1 slide-description">
+                  <p class="slide-1 tagline">Делай селфи,<br> как Бен Стиллер!</p>
+                  <p class="slide-text">Самая длинная палка для селфи доступна в нашем магазине.
+                    Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                  <a href="#" class="link">подробнее</a>
+                  <table class="tech-spec">
+                    <tr>
+                      <td>8,5 м</td>
+                      <td>5 кг</td>
+                      <td> Карбон</td>
+                    </tr>
+                    <tr>
+                      <th>Длина палки</th>
+                      <th>Вес палки</th>
+                      <th>Материал</th>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="slide-2 slide">
+                <div class="slide-2 slide-image">
+                  <img src="img/slider-2.png" width="345" height="485" alt="Изображение товара: Фитнес-браслет">
+                </div>
+                <div class="slide-2 slide-description">
+                  <p class="slide-2 tagline">Худеем<br> правильно!</p>
+                  <p class="slide-2 slide-text">Мотивирующие фитнес&dash;браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                  <a href="#" class="link">подробнее</a>
+                  <table class="tech-spec">
+                    <tr>
+                      <td>48 часов</td>
+                    </tr>
+                    <tr>
+                      <th>Без подзарядки</th>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="slide-3 slide">
+                <div class="slide-3 slide-image">
+                  <img src="img/slider-3.png" width="526" height="334" alt="Изображение товара: Квадрокоптер">
+                </div>
+                <div class="slide-3 slide-description">
+                  <p class="slide-3 tagline">Порхает как бабочка, жалит как пчела!</p>
+                  <p class="slide-3 slide-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                  <a href="#" class="link">подробнее</a>
+                  <table class="tech-spec">
+                    <tr>
+                      <td>800 м</td>
+                      <td>50 м</td>
+                    </tr>
+                    <tr>
+                      <th>Дальность полета</th>
+                      <th>Радиус поражения</th>
+                    </tr>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
         </section>
