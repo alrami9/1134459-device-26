@@ -18,7 +18,7 @@
 
 *, *::before, *::after {
   box-sizing: inherit;
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
 }
 
 html {
@@ -107,25 +107,6 @@ a {
 
 .link:active {
   color: rgba(0, 0, 0, 0.3);
-}
-
-.link-2 {
-  font-size: 18px;
-  line-height: 24px;
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-weight: 800;
-  color: #000000;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.link-2:hover {
-  background-color: #f0c52e;
-}
-
-.link-2:active {
-  background-color: #000000;
-  color: #f7e184;
 }
 
 .page-header {
@@ -554,13 +535,13 @@ a {
   letter-spacing: 0.01em;
 }
 
+.catalog {
+  margin-bottom: 64px;
+}
+
 .catalog-menu {
   display: flex;
   justify-content: space-between;
-}
-
-.catalog-menu a {
-
 }
 
 .menu-icon {
@@ -654,17 +635,9 @@ a {
   letter-spacing: 0.01em;
 }
 
-.conditions h3,
-.about-us h2,
-.contacts h2 {
-  font-size: 47px;
-  line-height: 48px;
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-weight: 800;
-}
-
 .conditions {
-  background-image: linear-gradient( #ffffff 0px, #ffffff 200px, #e5e5e5 200px, #e5e5e5 100%);
+  min-height: 387px;
+  background-image: linear-gradient( #ffffff 0px, #ffffff 99px, #e5e5e5 99px, #e5e5e5 100%);
 }
 
 .conditions .main-wrapper {
@@ -672,7 +645,147 @@ a {
 }
 
 .conditions-list {
-  min-width: 360px;
+  margin-top: 80px;
+  margin-right: 121px;
+  min-width: 280px;
+}
+
+.conditions-list label {
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+
+.link-2 {
+  margin-bottom: 23px;
+  width: 160px;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 0.2em;
+  background-image: linear-gradient( rgba(0,0,0,0) 0px, rgba(0,0,0,0) 16px, #f0c52e 16px, #f0c52e 24px, rgba(0,0,0,0) 24px, rgba(0,0,0,0) 100%);
+  background-color: inherit;
+}
+
+.link-2:hover {
+  background-image: none;
+  background-color: #f0c52e;
+}
+
+.link-2:active {
+  width: 100%;
+  text-align: left;
+  background-color: #000000;
+  color: #f7e184;
+}
+
+.link-delivery.link-2:active {
+  padding-left: 18px;
+}
+
+.link-warranty.link-2:active {
+  padding-left: 23px;
+}
+
+.link-credit.link-2:active {
+  padding-left: 36px;
+}
+
+.slide-delivery,
+.slide-warranty,
+.slide-credit {
+  position: relative;
+  display: none;
+}
+
+.slider-conditions {
+  position: relative;
+  margin-top: 25px;
+}
+
+.slider-conditions::before {
+  position: absolute;
+  /* visibility: hidden; */
+  top: -26px;
+  left:-124px;
+  content: "";
+  width: 7px;
+  height: 319px;
+  background-color: #000000;
+}
+
+/* input[name="toogle-2"]:active ~ .slider-conditions::before {
+  visibility: visible;
+} */
+
+.slide-delivery::after {
+  position: absolute;
+  top: 12px;
+  right: -305px;
+  content: "";
+  width: 183px;
+  height: 194px;
+  background-image: url("../img/delivery.svg");
+  background-repeat: no-repeat;
+}
+
+.slide-warranty::after {
+  position: absolute;
+  top: -12px;
+  right: -290px;
+  content: "";
+  width: 183px;
+  height: 194px;
+  background-image: url("../img/warranty.svg");
+  background-repeat: no-repeat;
+}
+
+.slide-credit::after {
+  position: absolute;
+  top: -12px;
+  right: -281px;
+  content: "";
+  width: 183px;
+  height: 194px;
+  background-image: url("../img/credit.svg");
+  background-repeat: no-repeat;
+}
+
+.slider-conditions h3 {
+  margin-bottom: 31px;
+}
+
+.slider-conditions p {
+  width: 435px;
+  letter-spacing: 0.01em;
+}
+
+#btn-10:checked ~ .slider-conditions .slide-delivery {
+  display: block;
+}
+
+#btn-20:checked ~ .slider-conditions .slide-warranty {
+  display: block;
+}
+
+#btn-30:checked ~ .slider-conditions .slide-credit {
+  display: block;
+}
+
+.conditions h3,
+.about-us h2,
+.contacts h2 {
+  font-size: 47px;
+  line-height: 48px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.01em;
 }
 
 .partners-list {
