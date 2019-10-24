@@ -595,6 +595,7 @@ a {
 
 .icon-link:hover .menu-icon {
   background-color: #f0c52e;
+  transition: 1s;
 }
 
 .icon-link:active .icon-1 {
@@ -636,6 +637,7 @@ a {
 }
 
 .conditions {
+  margin-bottom: 94px;
   min-height: 387px;
   background-image: linear-gradient( #ffffff 0px, #ffffff 99px, #e5e5e5 99px, #e5e5e5 100%);
 }
@@ -789,7 +791,34 @@ a {
 }
 
 .partners-list {
+  position: relative;
   display: flex;
+  justify-content: space-between;
+}
+
+.partner-logo::before {
+  position: absolute;
+  content: "";
+  width: 260px;
+  height: 100px;
+  background-image: url("../img/sprites-partners.jpg");
+  opacity: 0;
+}
+
+.partner-logo:hover::before {
+  opacity: 1;
+}
+
+.partner-logo:nth-child(2):hover::before {
+  background-position: 0 -100px;
+}
+
+.partner-logo:nth-child(3):hover::before {
+  background-position: 0 -200px;
+}
+
+.partner-logo:nth-child(4):hover::before {
+  background-position: 0 -300px;
 }
 
 .contacts-about-us {
