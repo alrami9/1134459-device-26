@@ -175,7 +175,7 @@ a {
   margin-left: 24px;
 }
 
-.user-nav .user {
+.user-nav .entrance {
   margin-right: 183px;
 }
 
@@ -961,7 +961,7 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.page-footer .user {
+.page-footer .entrance {
   margin-right: 8px;
 }
 
@@ -1030,6 +1030,20 @@ a {
 
 
 /* =========================CATALOG PAGE ===============*/
+
+.inner-page .entrance {
+  margin-right: 30px;
+  margin-left: 16px;
+}
+
+.inner-page .entrance-inner {
+  padding-left: 0;
+  min-width: 50px;
+}
+
+.inner-page .user-icon::before {
+  left: -3px;
+}
 
 .catalog-page > h2 {
   font-size: 47px;
