@@ -1242,3 +1242,7 @@ a {
 .pagination > a:active {
   color: rgba(0, 0, 0, 0.3);
 }
+
+.inner-page .footer-entrance {
+  margin-right: 8px;
+}
