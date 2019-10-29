@@ -1031,6 +1031,10 @@ a {
 
 /* =========================CATALOG PAGE ===============*/
 
+.page-header {
+  min-height: 186px;
+}
+
 .inner-page .entrance {
   margin-right: 30px;
   margin-left: 16px;
@@ -1046,20 +1050,43 @@ a {
 }
 
 .catalog-page > h2 {
+  margin-bottom: 18px;
   font-size: 47px;
   line-height: 48px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
+  letter-spacing: 0.01em;
 }
 
 .breadcrumbs {
   display: flex;
+  margin-bottom: 44px;
+}
+
+.breadcrumbs li {
+  position: relative;
+  margin-right: 37px;
+}
+
+.breadcrumbs li::after {
+  position: absolute;
+  content: "";
+  top: 13px;
+  right: -20px;
+  width: 4px;
+  height: 7px;
+  background-image: url("../img/nav-arrow.svg");
+}
+
+.breadcrumbs li:last-of-type::after {
+  background-image: none;
 }
 
 .breadcrumbs a {
   font-size: 14px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.01em;
 }
 
 .breadcrumbs a:hover {
