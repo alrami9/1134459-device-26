@@ -59,26 +59,39 @@
             <h2>фильтр:</h2>
           </div>
           <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
-            <h3>Стоимость</h3>
-            <input type="range" name="" value="">
-            <fieldset>
+            <div class="filter-range">
+              <h3>Стоимость</h3>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar">
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от <input class="min-price-input" type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input class="max-price-input" type="text" name="max-price" value="5000"></label>
+              </div>
+            </div>
+            <fieldset class="checkbox-aria">
               <h3>Цвет</h3>
-              <input type="checkbox" name="black" aria-label="черный цвет" id="black" checked>
+              <input class="visually-hidden checkbox-input" type="checkbox" name="black" aria-label="черный цвет" id="black" checked>
               <label for="black">Черный</label>
-              <input type="checkbox" name="white" aria-label="белый цвет" id="white">
+              <input class="visually-hidden checkbox-input" type="checkbox" name="white" aria-label="белый цвет" id="white">
               <label for="white">Белый</label>
-              <input type="checkbox" name="blue" aria-label="синий цвет" id="blue" checked>
+              <input class="visually-hidden checkbox-input" type="checkbox" name="blue" aria-label="синий цвет" id="blue" checked>
               <label for="blue">Синий</label>
-              <input type="checkbox" name="red" aria-label="красный цвет" id="red" checked>
+              <input class="visually-hidden checkbox-input" type="checkbox" name="red" aria-label="красный цвет" id="red" checked>
               <label for="red">Красный</label>
-              <input type="checkbox" name="pink" aria-label="розовый цвет" id="pink">
+              <input class="visually-hidden checkbox-input" type="checkbox" name="pink" aria-label="розовый цвет" id="pink">
               <label for="pink">Розовый</label>
             </fieldset>
-            <fieldset>
+            <fieldset class="radio-aria">
               <h3>Bluetooth</h3>
-              <input type="radio" name="bluetooth" value="yes" aria-label="bluetooth есть" id="bluetooth-yes" checked>
+              <input class="visually-hidden radio-input" type="radio" name="bluetooth" value="yes" aria-label="bluetooth есть" id="bluetooth-yes" checked>
               <label for="bluetooth-yes">Есть</label>
-              <input type="radio" name="bluetooth" value="no" aria-label="bluetooth отсутствует" id="bluetooth-no">
+              <input class="visually-hidden radio-input" type="radio" name="bluetooth" value="no" aria-label="bluetooth отсутствует" id="bluetooth-no">
               <label for="bluetooth-no">Нет</label>
             </fieldset>
             <button class="link" type="submit">показать</button>

@@ -18,7 +18,6 @@
 
 *, *::before, *::after {
   box-sizing: inherit;
-  /* outline: 1px solid blue; */
 }
 
 html {
@@ -97,7 +96,7 @@ a {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  background-image: linear-gradient( #ffffff 0px, #ffffff 16px, #f0c52e 16px, #f0c52e 24px, #ffffff 24px, #ffffff 100%);
+  background-image: linear-gradient( rgba(0,0,0,0) 0px, rgba(0,0,0,0) 16px, #f0c52e 16px, #f0c52e 24px, rgba(0,0,0,0) 24px, rgba(0,0,0,0) 100%);
 }
 
 .link:hover {
@@ -1031,7 +1030,7 @@ a {
 
 /* =========================CATALOG PAGE ===============*/
 
-.page-header {
+.inner-page .page-header {
   min-height: 186px;
 }
 
@@ -1103,48 +1102,206 @@ a {
 
 .filter {
   background-color: #eeeeee;
-  width: calc(50% - 250px);
+  width: calc(50% - 252px);
+}
+
+.filter-form fieldset {
+  border: none;
+  padding: 0;
+}
+
+.filter-form label {
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.01em;
 }
 
 .filter-tagline {
+  margin-top: -13px;
+  margin-bottom: 81px;
+  min-height: 70px;
   background-color: #dcdcdc;
 }
 
 .filter h2 {
+  padding-top: 23px;
+  padding-left: 2px;
   font-size: 16px;
   line-height: 24px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
-  width: 328px;
+  width: 270px;
   margin-left: auto;
+  letter-spacing: 0.2em;
+}
+
+.filter-range {
+  margin-bottom: 21px;
+}
+
+.filter-range h3 {
+  margin-bottom: 35px;
+}
+
+.scale {
+  position: relative;
+  margin-left: 0px;
+  width: 201px;
+  height: 2px;
+  background-color: #dbdbdb;
+}
+
+.bar {
+  width: 56%;
+  height: 2px;
+  background-color: #91c92f;
+}
+
+.range-toggle {
+  z-index: 1;
+  position: absolute;
+  width: 20px;
+  height: 23px;
+  cursor: pointer;
+  background-image: url("../img/filter-button.svg");
+}
+
+.range-toggle-min {
+  top: -10px;
+  left: -4px;
+}
+
+.range-toggle-max {
+  top: -10px;
+  left: 55%;
+}
+
+.min-price,
+.min-price-input,
+.max-price,
+.max-price-input {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 300;
+}
+
+.filter-range label {
+  opacity: 0.2;
+}
+
+.filter-range input {
+  padding: 0;
+  width: 70px;
+  background-color: inherit;
+  border: none;
+  outline: none;
 }
 
 .filter h3 {
+  position: relative;
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.filter h3::before {
+  position: absolute;
+  content: "";
+  top: -12px;
+  left: -1px;
+  width: 201px;
+  height: 2px;
+  background-color: #000000;
 }
 
 .filter-form {
-  display: flex;
-  flex-direction: column;
-  width: 328px;
+  width: 270px;
   margin-left: auto;
 }
 
-.filter-form label {
-  font-size: 14px;
-  line-height: 39px;
+.checkbox-aria,
+.radio-aria {
+  width: 200px;
+  margin-bottom: 25px;
 }
 
-.filter-form input[disabled] + label {
-  color: rgba(0, 0, 0, 0.25);
+.radio-aria {
+  margin-bottom: 31px;
+}
+
+.checkbox-aria label,
+.radio-aria label {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 40px;
+  padding-left: 38px;
+  cursor: pointer;
+}
+
+.checkbox-aria label:hover,
+.radio-aria label:hover {
+  opacity: 0.6;
+}
+
+.checkbox-aria label:active,
+.radio-aria label:active {
+  opacity: 1;
+}
+
+.checkbox-aria label::before {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: -2px;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+
+.checkbox-input:checked + label::before {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.checkbox-input:disabled + label,
+.radio-input:disabled + label {
+  opacity: 0.25;
+}
+
+/* .checkbox-input:focus + label,
+.radio-input:focus + label {
+  outline :1px solid #4D90FE;
+} */
+
+.radio-aria label::before {
+  position: absolute;
+  content: "";
+  top: 6px;
+  left: -2px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-off.svg");
+}
+
+.radio-input:checked + label::before {
+  background-image: url("../img/radio-on.svg");
+}
+
+.filter .link {
+  width: 200px;
+  border: none;
+  cursor: pointer;
 }
 
 .items {
-  width: calc(50% + 250px);
+  width: calc(50% + 252px);
 }
 
 .sort {
@@ -1272,4 +1429,9 @@ a {
 
 .inner-page .footer-entrance {
   margin-right: 8px;
+}
+
+
+* {
+  /* outline: 1px solid blue; */
 }
