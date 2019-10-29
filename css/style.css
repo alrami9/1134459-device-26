@@ -1301,6 +1301,7 @@ a {
 }
 
 .items {
+  margin-bottom: 77px;
   width: calc(50% + 252px);
 }
 
@@ -1358,10 +1359,6 @@ a {
   color: rgba(0, 0, 0, 1);
 }
 
-.direction  {
-  width: 11px;
-}
-
 .direction a::after {
   position: absolute;
   content: "";
@@ -1394,6 +1391,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-left: 72px;
+  margin-top: 69px;
 }
 
 .items-wrapper {
@@ -1401,13 +1400,45 @@ a {
 }
 
 .catalog-item {
+  position: relative;
+  margin-bottom: 46px;
   width: 360px;
 }
 
+.item-img {
+  margin-bottom: 32px;
+}
+
+.item-cart {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 170px;
+  padding-left: 80px;
+  width: 360px;
+  height: 380px;
+  background-color: rgba(238, 238, 238, 0.7);
+}
+
+.item-img:hover + .item-cart {
+  display: block;
+}
+
+.item-cart .link {
+  display: block;
+  margin-bottom: 14px;
+  width: 200px;
+}
+
 .item-cart a:last-child {
+  display: block;
+  padding-left: 30px;
+  width: 200px;
   font-size: 13px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.01em;
 }
 
 .item-cart a:last-child:hover {
@@ -1418,12 +1449,41 @@ a {
   color: rgba(0, 0, 0, 0.2);
 }
 
+.new::before {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "new";
+  top: 29px;
+  right: 27px;
+  width: 60px;
+  height: 60px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 0.05;
+}
+
+.item-name {
+  display: flex;
+  justify-content: space-between;
+}
+
 .item-name a {
+  margin-right: 20px;
+  width: 260px;
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   color: #000000;
+  letter-spacing: 0.01em;
 }
 
 .item-name span {
@@ -1431,28 +1491,44 @@ a {
   line-height: 24px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 300;
+  letter-spacing: 0.01em;
 }
 
 .pagination {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-top: -11px;
+  margin-left: 72px;
+  min-height: 70px;
   background-color: #ebebeb;
 }
 
 .pagination a {
+  padding-top: 23px;
+  padding-right: 30px;
+  padding-bottom: 23px;
+  padding-left: 30px;
   font-size: 16px;
   line-height: 24px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   color: #000000;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .pagination-list {
   display: flex;
+  margin-left: 20px;
+}
+
+.pagination-list li {
+  margin-right: 8px;
 }
 
 .pagination-list a {
+  padding: 10px;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1464,7 +1540,7 @@ a {
   color: rgba(0, 0, 0, 1);
 }
 
-.pagination-list .active-page {
+.pagination-list .active-unit {
   color: rgba(0, 0, 0, 1);
 }
 
