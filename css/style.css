@@ -44,11 +44,6 @@ a {
   text-decoration: none;
 }
 
-.map-popup,
-.write-us-popup {
-  display: none;
-}
-
 .main-wrapper {
   width: 1160px;
   margin-right: auto;
@@ -932,6 +927,10 @@ a {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.page-footer .tel {
+  margin-top: 13px;
+}
+
 .page-footer a:hover {
   color: rgba(255, 255, 255, 1);
 }
@@ -1556,6 +1555,96 @@ a {
   margin-right: 8px;
 }
 
+.map-popup,
+.write-us-popup {
+  /* display: none; */
+}
+
+.write-us-popup {
+  margin: 0 auto;
+  padding: 100px;
+  padding-top: 93px;
+  width: 960px;
+  height: 553px;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.write-us-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.write-us-form label {
+  display: block;
+  margin-bottom: 7px;
+  width: 360px;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  color: #000000;
+  cursor: pointer;
+}
+
+.write-us-form input {
+  margin-bottom: 34px;
+  padding-top: 16px;
+  padding-right: 20px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  width: 360px;
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+}
+
+.text-field {
+  margin-bottom: 32px;
+}
+
+.text-field textarea {
+  padding-top: 15px;
+  padding-right: 18px;
+  padding-bottom: 15px;
+  padding-left: 18px;
+  width: 760px;
+  height: 156px;
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+}
+
+.write-us-form input:hover,
+.write-us-form textarea:hover {
+  background-color: #eaeaea;
+}
+
+.write-us-form input:focus,
+.write-us-form textarea:focus {
+  background-color: #ffffff;
+  outline: 3px solid #f7e296;
+}
+
+.write-us-form .link {
+  width: 200px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.write-us-form .link:hover {
+  background-color: #f0c52e;
+}
+
+.map-popup {
+  margin: 0 auto;
+  width: 960px;
+  height: 559px;
+  background-image: url("../img/map-big.jpg");
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+}
 
 * {
   /* outline: 1px solid blue; */

@@ -249,7 +249,7 @@
             <li><a href="#">Гарантия</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
-          <p>Тел.: +7 (495) 495-95-95</p>
+          <a class="tel" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
         </div>
         <div class="footer-columns">
           <ul class="social clear-list">
@@ -262,18 +262,24 @@
       </div>
     </footer>
     <div class="map-popup">
-      <a href="#">интерактивная карта</a>
+      <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CGHZF883" width="960" height="559" frameborder="0" allowfullscreen="true"></iframe> -->
       <button type="button">закрыть</button>
     </div>
     <div class="write-us-popup">
-      <form class="" action="https://echo.htmlacademy.ru" method="post">
-        <label for="name">Ваше имя:</label>
-        <input type="text" name="Name" value="" placeholder="Имя Фамилия" id="name">
-        <label for="email">Ваш e-mail:</label>
-        <input type="text" name="Email" value="" placeholder="email@example.com" id="email">
-        <label for="text">Текст письма:</label>
-        <textarea name="Text" rows="8" cols="80" placeholder="В свободной форме" id="text"></textarea>
-        <button type="submit">отправить</button>
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="name-field">
+          <label for="name">Ваше имя:</label>
+          <input type="text" name="Name" value="" placeholder="Имя Фамилия" id="name">
+        </div>
+        <div class="email-field">
+          <label for="email">Ваш e-mail:</label>
+          <input type="text" name="Email" value="" placeholder="email@example.com" id="email">
+        </div>
+        <div class="text-field">
+          <label for="text">Текст письма:</label>
+          <textarea name="text" placeholder="В свободной форме" id="text"></textarea>
+        </div>
+        <button class="link" type="submit">отправить</button>
       </form>
       <button type="button">закрыть</button>
     </div>
