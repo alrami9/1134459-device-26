@@ -28,9 +28,10 @@ body {
   min-width: 1160px;
   font-size: 15px;
   line-height: 30px;
-  font-weight: 300;
   font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
   color: #000000;
+
   background-color: #ffffff;
 }
 
@@ -61,8 +62,8 @@ a {
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+  border: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -85,16 +86,16 @@ a {
   line-height: 24px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
-  color: #000000;
   text-align: center;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   background-image: linear-gradient( rgba(0,0,0,0) 0px, rgba(0,0,0,0) 16px, #f0c52e 16px, #f0c52e 24px, rgba(0,0,0,0) 24px, rgba(0,0,0,0) 100%);
 }
 
 .link:hover {
-  background-image: none;
   background-color: #f0c52e;
+  background-image: none;
 }
 
 .link:active {
@@ -163,16 +164,16 @@ a {
 }
 
 .user-nav .entrance {
-  margin-right: 207px;
   max-width: 120px;
+  margin-right: 207px;
 }
 
 .user-nav a {
   position: relative;
+  min-width: 100px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 24px;
-  min-width: 100px;
   text-align: right;
 }
 
@@ -219,8 +220,8 @@ a {
   margin-top: 12px;
   padding-top: 9px;
   padding-bottom: 9px;
-  border: 2px solid #000000;
   font-weight: 300;
+  border: 2px solid #000000;
   background-color: transparent;
   cursor: pointer;
 }
@@ -234,8 +235,8 @@ a {
 .btn-search:hover {
   display: inline-block;
   vertical-align: top;
-  background-color: #000000;
   color: #ffffff;
+  background-color: #000000;
 }
 
 .btn-search:active {
@@ -316,8 +317,8 @@ a {
 }
 
 .main-nav-item:last-of-type {
-  margin-left: 74px;
   margin-right: 0;
+  margin-left: 74px;
 }
 
 .main-nav span {
@@ -357,17 +358,17 @@ a {
 
 .slider-controls {
   position: absolute;
-  z-index: 100;
   top: 322px;
   right: 67px;
+  z-index: 100;
 }
 
 .slider-controls label {
   display: inline-block;
   vertical-align: top;
-  margin-right: 11px;
   width: 22px;
   height: 22px;
+  margin-right: 11px;
   background-image: url("../img/slider-button-empty.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -398,9 +399,9 @@ a {
 
 .slide::before {
   position: absolute;
+  content: "";
   top: 37px;
   left: 600px;
-  content: "";
   width: 100px;
   height: 7px;
   background-color: #ffffff;
@@ -409,11 +410,11 @@ a {
 .slide-1.slide::after,
 .slide-2.slide::after,
 .slide-3.slide::after {
-  z-index: -1;
   position: absolute;
   content: "";
   top: -15px;
   right: 47px;
+  z-index: -1;
   font-size: 179px;
   line-height: 179px;
   font-family: "Gilroy", "Arial", sans-serif;
@@ -485,8 +486,8 @@ a {
 }
 
 .slide-text {
-  margin-bottom: 43px;
   width: 485px;
+  margin-bottom: 43px;
   letter-spacing: 0.01em;
 }
 
@@ -499,8 +500,8 @@ a {
 }
 
 .slide .link {
-  margin-bottom: 49px;
   width: 220px;
+  margin-bottom: 49px;
 }
 
 .tech-spec {
@@ -539,9 +540,9 @@ a {
 }
 
 .menu-icon {
-  margin-bottom: 33px;
   width: 160px;
   height: 160px;
+  margin-bottom: 33px;
   background-color: #f7e296;
   background-repeat: no-repeat;
 }
@@ -620,8 +621,8 @@ a {
 }
 
 .conditions {
-  margin-bottom: 94px;
   min-height: 387px;
+  margin-bottom: 94px;
   background-image: linear-gradient( #ffffff 0px, #ffffff 99px, #e5e5e5 99px, #e5e5e5 100%);
 }
 
@@ -630,9 +631,9 @@ a {
 }
 
 .conditions-list {
+  min-width: 280px;
   margin-top: 80px;
   margin-right: 121px;
-  min-width: 280px;
 }
 
 .conditions-list label {
@@ -643,31 +644,31 @@ a {
 }
 
 .link-2 {
-  margin-bottom: 23px;
   width: 160px;
+  margin-bottom: 23px;
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
-  color: #000000;
   text-align: center;
+  color: #000000;
   text-transform: uppercase;
-  cursor: pointer;
   letter-spacing: 0.2em;
-  background-image: linear-gradient( rgba(0,0,0,0) 0px, rgba(0,0,0,0) 16px, #f0c52e 16px, #f0c52e 24px, rgba(0,0,0,0) 24px, rgba(0,0,0,0) 100%);
   background-color: inherit;
+  background-image: linear-gradient( rgba(0,0,0,0) 0px, rgba(0,0,0,0) 16px, #f0c52e 16px, #f0c52e 24px, rgba(0,0,0,0) 24px, rgba(0,0,0,0) 100%);
+  cursor: pointer;
 }
 
 .link-2:hover {
-  background-image: none;
   background-color: #f0c52e;
+  background-image: none;
 }
 
 .link-2:active {
   width: 100%;
   text-align: left;
-  background-color: #000000;
   color: #f7e184;
+  background-color: #000000;
 }
 
 .link-delivery.link-2:active {
@@ -696,10 +697,10 @@ a {
 
 .slider-conditions::before {
   position: absolute;
+  content: "";
   /* visibility: hidden; */
   top: -26px;
   left:-124px;
-  content: "";
   width: 7px;
   height: 319px;
   background-color: #000000;
@@ -711,9 +712,9 @@ a {
 
 .slide-delivery::after {
   position: absolute;
+  content: "";
   top: 12px;
   right: -305px;
-  content: "";
   width: 183px;
   height: 194px;
   background-image: url("../img/delivery.svg");
@@ -722,9 +723,9 @@ a {
 
 .slide-warranty::after {
   position: absolute;
+  content: "";
   top: -12px;
   right: -290px;
-  content: "";
   width: 183px;
   height: 194px;
   background-image: url("../img/warranty.svg");
@@ -733,9 +734,9 @@ a {
 
 .slide-credit::after {
   position: absolute;
+  content: "";
   top: -12px;
   right: -281px;
-  content: "";
   width: 183px;
   height: 194px;
   background-image: url("../img/credit.svg");
@@ -834,8 +835,8 @@ a {
 .about-us h2::before,
 .contacts h2::before {
   position: absolute;
-  top: -52px;
   content: "";
+  top: -52px;
   width: 80px;
   height: 7px;
   background-color: #000000;
@@ -847,8 +848,8 @@ a {
 }
 
 .about-us p {
-  margin-bottom: 30px;
   width: 475px;
+  margin-bottom: 30px;
 }
 
 .about-us p:last-of-type {
@@ -1045,8 +1046,8 @@ a {
 }
 
 .inner-page .entrance-inner {
-  padding-left: 0;
   min-width: 50px;
+  padding-left: 0;
 }
 
 .inner-page .user-icon::before {
@@ -1107,13 +1108,13 @@ a {
 }
 
 .filter {
-  background-color: #eeeeee;
   width: calc(50% - 252px);
+  background-color: #eeeeee;
 }
 
 .filter-form fieldset {
-  border: none;
   padding: 0;
+  border: none;
 }
 
 .filter-form label {
@@ -1123,13 +1124,15 @@ a {
 }
 
 .filter-tagline {
+  min-height: 70px;
   margin-top: -13px;
   margin-bottom: 81px;
-  min-height: 70px;
   background-color: #dcdcdc;
 }
 
 .filter h2 {
+  width: 270px;
+  margin-left: auto;
   padding-top: 23px;
   padding-left: 2px;
   font-size: 16px;
@@ -1137,8 +1140,6 @@ a {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
-  width: 270px;
-  margin-left: auto;
   letter-spacing: 0.2em;
 }
 
@@ -1152,9 +1153,9 @@ a {
 
 .scale {
   position: relative;
-  margin-left: 0px;
   width: 201px;
   height: 2px;
+  margin-left: 0px;
   background-color: #dbdbdb;
 }
 
@@ -1165,12 +1166,12 @@ a {
 }
 
 .range-toggle {
-  z-index: 1;
   position: absolute;
+  z-index: 1;
   width: 20px;
   height: 23px;
-  cursor: pointer;
   background-image: url("../img/filter-button.svg");
+  cursor: pointer;
 }
 
 .range-toggle-min {
@@ -1200,8 +1201,8 @@ a {
 }
 
 .filter-range input {
-  padding: 0;
   width: 70px;
+  padding: 0;
   background-color: inherit;
   border: none;
   outline: none;
@@ -1307,14 +1308,14 @@ a {
 }
 
 .items {
-  margin-bottom: 77px;
   width: calc(50% + 252px);
+  margin-bottom: 77px;
 }
 
 .sort {
   display: flex;
-  margin-left: 73px;
   min-height: 70px;
+  margin-left: 73px;
 }
 
 .sort-columns {
@@ -1340,8 +1341,8 @@ a {
 }
 
 .sort h2 {
-  margin-right: 55px;
   align-self: center;
+  margin-right: 55px;
   font-size: 16px;
   line-height: 24px;
   font-family: "Gilroy", "Arial", sans-serif;
@@ -1407,8 +1408,8 @@ a {
 
 .catalog-item {
   position: relative;
-  margin-bottom: 46px;
   width: 360px;
+  margin-bottom: 46px;
 }
 
 .item-img {
@@ -1416,14 +1417,14 @@ a {
 }
 
 .item-cart {
-  display: none;
   position: absolute;
   top: 0;
   left: 0;
-  padding-top: 170px;
-  padding-left: 80px;
+  display: none;
   width: 360px;
   height: 380px;
+  padding-top: 170px;
+  padding-left: 80px;
   background-color: rgba(238, 238, 238, 0.7);
 }
 
@@ -1433,14 +1434,14 @@ a {
 
 .item-cart .link {
   display: block;
-  margin-bottom: 14px;
   width: 200px;
+  margin-bottom: 14px;
 }
 
 .item-cart a:last-child {
   display: block;
-  padding-left: 30px;
   width: 200px;
+  padding-left: 30px;
   font-size: 13px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.5);
@@ -1457,16 +1458,14 @@ a {
 
 .new::before {
   position: absolute;
+  content: "new";
   display: flex;
   justify-content: center;
   align-items: center;
-  content: "new";
   top: 29px;
   right: 27px;
   width: 60px;
   height: 60px;
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
   font-size: 14px;
   line-height: 24px;
   font-family: "Gilroy", "Arial", sans-serif;
@@ -1474,6 +1473,8 @@ a {
   color: rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
   letter-spacing: 0.05;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
 }
 
 .item-name {
@@ -1482,8 +1483,8 @@ a {
 }
 
 .item-name a {
-  margin-right: 20px;
   width: 260px;
+  margin-right: 20px;
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy", "Arial", sans-serif;
@@ -1505,9 +1506,9 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  min-height: 70px;
   margin-top: -11px;
   margin-left: 72px;
-  min-height: 70px;
   background-color: #ebebeb;
 }
 
@@ -1569,11 +1570,11 @@ a {
 }
 
 .write-us-popup {
+  width: 960px;
+  height: 553px;
   margin: 0 auto;
   padding: 100px;
   padding-top: 93px;
-  width: 960px;
-  height: 553px;
   background-color: #ffffff;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
 }
@@ -1586,8 +1587,8 @@ a {
 
 .write-us-form label {
   display: block;
-  margin-bottom: 7px;
   width: 360px;
+  margin-bottom: 7px;
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy", "Arial", sans-serif;
@@ -1597,12 +1598,12 @@ a {
 }
 
 .write-us-form input {
+  width: 360px;
   margin-bottom: 34px;
   padding-top: 16px;
   padding-right: 20px;
   padding-bottom: 16px;
   padding-left: 20px;
-  width: 360px;
   background-color: #f2f2f2;
   border: none;
   outline: none;
@@ -1613,12 +1614,12 @@ a {
 }
 
 .text-field textarea {
+  width: 760px;
+  height: 156px;
   padding-top: 15px;
   padding-right: 18px;
   padding-bottom: 15px;
   padding-left: 18px;
-  width: 760px;
-  height: 156px;
   background-color: #f2f2f2;
   border: none;
   outline: none;
@@ -1647,9 +1648,9 @@ a {
 }
 
 .map-popup {
-  margin: 0 auto;
   width: 960px;
   height: 559px;
+  margin: 0 auto;
   background-image: url("../img/map-big.jpg");
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
 }
