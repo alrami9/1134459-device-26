@@ -31,7 +31,6 @@ body {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   color: #000000;
-
   background-color: #ffffff;
 }
 
@@ -152,7 +151,7 @@ a {
 }
 
 .user-nav li {
-  margin-right: 24px;
+  margin-right: 41px;
 }
 
  .user-nav li:last-of-type {
@@ -164,17 +163,15 @@ a {
 }
 
 .user-nav .entrance {
-  max-width: 120px;
-  margin-right: 207px;
+  margin-right: 214px;
 }
 
 .user-nav a {
   position: relative;
-  min-width: 100px;
+  max-width: 160px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 24px;
-  text-align: right;
 }
 
 .search-form {
@@ -249,7 +246,7 @@ a {
   position: absolute;
   content: "";
   top: 24px;
-  left: 17px;
+  left: 1px;
   width: 12px;
   height: 12px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z'/%3E%3Cpath d='M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z'/%3E%3C/svg%3E");
@@ -259,7 +256,7 @@ a {
   position: absolute;
   content: "";
   top: 26px;
-  left: 11px;
+  left: 4px;
   width: 10px;
   height: 10px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpath d='M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z'/%3E%3C/svg%3E");
@@ -269,7 +266,7 @@ a {
   position: absolute;
   content: "";
   top: 24px;
-  left: 31px;
+  left: -2px;
   width: 13px;
   height: 12px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='12' viewBox='0 0 13 12'%3E%3Cpath fill='%23272525' d='M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z'/%3E%3C/svg%3E");
@@ -282,6 +279,7 @@ a {
 }
 
 .main-nav a {
+  max-width: 255px;
   padding-top: 15px;
   padding-bottom: 15px;
   font-size: 18px;
@@ -611,7 +609,7 @@ a {
 }
 
 .catalog-menu h3 {
-  width: 160px;
+  max-width: 160px;
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy", "Arial", sans-serif;
@@ -964,7 +962,7 @@ a {
 }
 
 .page-footer .entrance {
-  margin-right: 32px;
+  margin-right: 39px;
 }
 
 .page-footer .user-icon::before {
@@ -1038,20 +1036,16 @@ a {
 }
 
 .inner-page .entrance {
-  margin-right: 54px;
+  margin-right: 56px;
 }
 
 .inner-page .user {
-  margin-right: 16px;
+  margin-right: 22px;
 }
 
 .inner-page .entrance-inner {
   min-width: 50px;
   padding-left: 0;
-}
-
-.inner-page .user-icon::before {
-  left: -3px;
 }
 
 .catalog-page > h2 {
@@ -1633,7 +1627,12 @@ a {
 .write-us-form input:focus,
 .write-us-form textarea:focus {
   background-color: #ffffff;
-  outline: 3px solid #f7e296;
+  box-shadow: inset 0 0 0 3px #f7e296;
+}
+
+.write-us-form input:invalid,
+.write-us-form textarea:invalid {
+  background-color: #f6dada;
 }
 
 .write-us-form .link {
