@@ -5,7 +5,7 @@
     <title>HTML Academy: Девайс</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/min.style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header main-wrapper">
@@ -23,24 +23,20 @@
           <li class="cart"><a class="cart-icon" href="#">Корзина</a></li>
         </ul>
         <ul class="main-nav clear-list">
-          <li class="main-nav-item"><a class="catalog-link" href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav-item">
+            <a class="catalog-link" href="catalog.html">Каталог товаров</a>
+            <ul class="catalog-nav clear-list">
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="#">Фитнес&dash;браслеты</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+              <li><a href="#">Моноподы для селфи</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+            </ul>
+          </li>
           <li class="main-nav-item"><a href="#">Доставка</a></li>
           <li class="main-nav-item"><a href="#">Гарантия</a></li>
           <li class="main-nav-item"><a href="#">Контакт<span>ы</span></a></li>
-        </ul>
-        <ul class="catalog-nav clear-list">
-          <div>
-            <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="#">Моноподы для селфи</a></li>
-            <li><a href="#">Экшн-камеры</a></li>
-          </div>
-          <div>
-            <li><a href="#">Фитнес&dash;браслеты</a></li>
-            <li><a href="#">Умные часы</a></li>
-          </div>
-          <div>
-            <li><a href="#">Квадрокоптеры</a></li>
-          </div>
         </ul>
       </nav>
     </header>
@@ -71,7 +67,7 @@
                     <tr>
                       <td>8,5 м</td>
                       <td>5 кг</td>
-                      <td> Карбон</td>
+                      <td>Карбон</td>
                     </tr>
                     <tr>
                       <th>Длина палки</th>
@@ -87,7 +83,7 @@
                 </div>
                 <div class="slide-2 slide-description">
                   <p class="slide-2 tagline">Худеем<br> правильно!</p>
-                  <p class="slide-2 slide-text">Мотивирующие фитнес&dash;браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                  <p class="slide-2 slide-text">Мотивирующие фитнес&dash;браслеты помогут найти в себе силы не&nbsp;пропускать занятия и соблюдать диету.</p>
                   <a class="link" href="#">подробнее</a>
                   <table class="tech-spec">
                     <tr>
@@ -105,7 +101,7 @@
                 </div>
                 <div class="slide-3 slide-description">
                   <p class="slide-3 tagline">Порхает как бабочка, жалит как пчела!</p>
-                  <p class="slide-3 slide-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                  <p class="slide-3 slide-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным&nbsp;лазером, замаскированным под стандартную камеру.</p>
                   <a class="link" href="#">подробнее</a>
                   <table class="tech-spec">
                     <tr>
@@ -174,7 +170,7 @@
         <div class="main-wrapper">
           <h2 class="visually-hidden">Доставка гарантия и оплата</h2>
           <ul class="conditions-list clear-list">
-            <li class="link-delivery link-2"><label for="btn-10">доставка</label></li>
+            <li class="link-delivery link-2 link-2-current"><label for="btn-10">доставка</label></li>
             <li class="link-warranty link-2"><label for="btn-20">гарантия</label></li>
             <li class="link-credit link-2"><label for="btn-30">кредит</label></li>
           </ul>
@@ -227,8 +223,10 @@
         <section class="contacts">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <img class="map" src="img/map.jpg" width="560" height="222" alt="Адрес офиса: г. Москва, ул. Строителей, д. 15">
-          <a class="link" href="#">напишите нам</a>
+          <a class="link-map-popup" href="#">
+            <img class="map" src="img/map.jpg" width="560" height="222" alt="Адрес офиса: г. Москва, ул. Строителей, д. 15">
+          </a>
+          <a class="link link-popup" href="#">напишите нам</a>
         </section>
       </div>
     </main>
@@ -263,7 +261,7 @@
     </footer>
     <div class="map-popup">
       <iframe src="https://yandex.ru/map-widget/v1/-/CGHZF883" width="960" height="559" frameborder="0" allowfullscreen="true"></iframe>
-      <button type="button">закрыть</button>
+      <button class="modal-close-btn" type="button" aria-label="закрыть"></button>
     </div>
     <div class="write-us-popup">
       <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
@@ -281,7 +279,9 @@
         </div>
         <button class="link" type="submit">отправить</button>
       </form>
-      <button type="button">закрыть</button>
+      <button class="modal-close-btn" type="button" aria-label="закрыть"></button>
     </div>
+    <script type="text/javascript" src="js/min.write-us-popup.js"></script>
+    <script type="text/javascript" src="js/min.map-popup.js"></script>
   </body>
 </html>

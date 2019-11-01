@@ -5,7 +5,7 @@
     <title>HTML Academy: Девайс</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/min.style.css" rel="stylesheet">
   </head>
   <body class="inner-page">
     <header class="page-header main-wrapper">
@@ -24,24 +24,20 @@
           <li class="cart"><a class="cart-icon" href="#">Корзина</a></li>
         </ul>
         <ul class="main-nav clear-list">
-          <li class="main-nav-item"><a class="catalog-link" href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav-item">
+            <a class="catalog-link" href="catalog.html">Каталог товаров</a>
+            <ul class="catalog-nav clear-list">
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="#">Фитнес&dash;браслеты</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+              <li><a href="#">Моноподы для селфи</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+            </ul>
+          </li>
           <li class="main-nav-item"><a href="#">Доставка</a></li>
           <li class="main-nav-item"><a href="#">Гарантия</a></li>
           <li class="main-nav-item"><a href="#">Контакт<span>ы</span></a></li>
-        </ul>
-        <ul class="catalog-nav clear-list">
-          <div>
-            <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="#">Моноподы для селфи</a></li>
-            <li><a href="#">Экшн-камеры</a></li>
-          </div>
-          <div>
-            <li><a href="#">Фитнес&dash;браслеты</a></li>
-            <li><a href="#">Умные часы</a></li>
-          </div>
-          <div>
-            <li><a href="#">Квадрокоптеры</a></li>
-          </div>
         </ul>
       </nav>
     </header>
@@ -51,7 +47,7 @@
       <ul class="breadcrumbs clear-list container">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог товаров</a></li>
-        <li><a href="#">Моноподы для селфи</a></li>
+        <li><a>Моноподы для селфи</a></li>
       </ul>
       <div class="catalog-columns">
         <section class="filter">
@@ -103,11 +99,11 @@
             <div class="sort items-wrapper">
               <h2>сортировка:</h2>
               <ul class="sort-list clear-list">
-                <li><a href="#">По цене</a></li>
+                <li><a class="sort-list-current" href="#">По цене</a></li>
                 <li><a href="#">По типу</a></li>
                 <li><a href="#">По популярности</a></li>
                 <li class="direction"><a class="dir-up" href="#" aria-label="По возрастанию"></a></li>
-                <li class="direction"><a class="dir-down active-unit" href="#" aria-label="По убыванию"></a></li>
+                <li class="direction"><a class="dir-down" href="#" aria-label="По убыванию"></a></li>
               </ul>
             </div>
           </div>

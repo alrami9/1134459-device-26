@@ -1,0 +1,1 @@
+var link=document.querySelector(".link-popup"),writeUsPopup=document.querySelector(".write-us-popup"),close=writeUsPopup.querySelector(".modal-close-btn");link.addEventListener("click",function(e){e.preventDefault(),writeUsPopup.classList.add("modal-show")}),close.addEventListener("click",function(e){e.preventDefault(),writeUsPopup.classList.remove("modal-show")});
