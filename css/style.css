@@ -780,6 +780,12 @@ a {
   background-color: #000000;
 }
 
+#btn-10:focus ~ .conditions-list label[for="btn-10"],
+#btn-20:focus ~ .conditions-list label[for="btn-20"],
+#btn-30:focus ~ .conditions-list label[for="btn-30"] {
+  box-shadow: 0 0 0 1px #4D90FE;
+}
+
 .link-2-current {
   width: 100%;
   padding-left: 18px;
@@ -1532,12 +1538,18 @@ a {
   color: rgba(0, 0, 0, 1);
 }
 
+.dir-up:focus::after,
+.dir-down:focus::after {
+  outline: 1px solid #4D90FE;
+}
+
 .direction a::after {
   position: absolute;
   content: "";
-  width: 11px;
-  height: 10px;
+  width: 21px;
+  height: 15px;
   opacity: 0.2;
+  background-repeat: no-repeat;
 }
 
 .direction a:hover::after {
@@ -1550,13 +1562,13 @@ a {
 
 .direction .dir-up::after {
   top: 12px;
-  right: 31px;
+  right: 21px;
   background-image: url("../img/icon-up-dir.svg");
 }
 
 .direction .dir-down::after {
   top: 12px;
-  right: 1px;
+  right: -9px;
   background-image: url("../img/icon-down-dir.svg");
   opacity: 1;
 }
