@@ -91,6 +91,7 @@ a {
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  background-color: transparent;
   background-image: -o-linear-gradient( rgba(0,0,0,0) 0px, rgba(0,0,0,0) 16px, #f0c52e 16px, #f0c52e 24px, rgba(0,0,0,0) 24px, rgba(0,0,0,0) 100%);
   background-image: linear-gradient( rgba(0,0,0,0) 0px, rgba(0,0,0,0) 16px, #f0c52e 16px, #f0c52e 24px, rgba(0,0,0,0) 24px, rgba(0,0,0,0) 100%);
 }
@@ -205,9 +206,11 @@ a {
   display: inline-block;
   vertical-align: top;
   margin-top: 21px;
+  margin-right: 129px;
   padding-right: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 14px;
   padding-left: 38px;
+  font-family: inherit;
   background-color: transparent;
   border: none;
   outline: none;
@@ -255,18 +258,22 @@ a {
 
 .search:focus {
   width: 355px;
+  margin-right: 0;
   border-bottom: 2px solid #000000;
 }
 
 .btn-search {
   display: none;
-  margin-top: 12px;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  margin-top: 6px;
+  padding-top: 14px;
+  padding-right: 18px;
+  padding-bottom: 14px;
+  padding-left: 19px;
   font-weight: 300;
   border: 2px solid #000000;
   background-color: transparent;
   cursor: pointer;
+  letter-spacing: 0.01em;
 }
 
 .search:focus + .btn-search {
@@ -1334,7 +1341,7 @@ a {
 .filter-range input {
   width: 70px;
   padding: 0;
-  background-color: inherit;
+  background-color: transparent;
   border: none;
   outline: none;
 }
@@ -1853,7 +1860,7 @@ a {
 
 .write-us-form .link {
   width: 200px;
-  background-color: inherit;
+  background-color: transparent;
   border: none;
   cursor: pointer;
 }
