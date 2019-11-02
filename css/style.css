@@ -430,10 +430,10 @@ a {
 }
 
 .slider-controls {
-  position: absolute;
-  bottom: 154px;
-  right: 67px;
-  z-index: 100;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+  margin-left: 171px;
 }
 
 .slider-controls label {
@@ -442,16 +442,27 @@ a {
   width: 22px;
   height: 22px;
   margin-right: 11px;
+  border-radius: 50%;
   background-image: url("../img/slider-button-empty.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   cursor: pointer;
 }
 
-#btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"],
-#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+.slider-controls label:last-child {
+  margin-right: 0;
+}
+
+#btn-1:checked ~ .slider-slides label[for="btn-1"],
+#btn-2:checked ~ .slider-slides label[for="btn-2"],
+#btn-3:checked ~ .slider-slides label[for="btn-3"] {
   background-image: url("../img/slider-button.svg");
+}
+
+#btn-1:focus ~ .slider-slides label[for="btn-1"],
+#btn-2:focus ~ .slider-slides label[for="btn-2"],
+#btn-3:focus ~ .slider-slides label[for="btn-3"] {
+  box-shadow: 0 0 0 1px #4D90FE;
 }
 
 .slider-slides {
